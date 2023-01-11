@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BG Color Changer</title>
 </head>
-<body style="background: red">
+<body style="background: red; transition: 12s ;">
     
   <select name="page0-select" id="page0-select" onchange="select(this.value);">
     <option value="color">Color</option>
@@ -17,6 +17,13 @@
   </select>
 
   <a href="index.html">Home Page</a>
+
+  <ul>
+    <li><h1>inside select tag "onchange=" argument is used to do functions </h1></li>
+    <li><h1>inside the function function(this.value) should be used to get the value</h1></li>
+    <li><h2>to change background use "background"</h2></li>
+    <li><h2>"trasition : 12s" delays the changes by 12 seconds</h2></li>
+  </ul>
 
 
 
