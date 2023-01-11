@@ -1,16 +1,12 @@
 
 
-// print selected color on console 
+var color = ["#222f3e","#ab2f3e","#22aa3e","#20003e","#222aca","#123f3e","#25251e","#934121",]
 
-function select(value) {
-    console.log(value);
-    let body = document.getElementsByTagName('body');
-    console.log(body[0]);
-    body[0].style.backgroundColor = value;
-}
+var i = 0;
 
-// print selected color on html page
-
-
+document.querySelector("button").addEventListener("click", function(){
+    i = i < color.length ? ++i : 0;
+    document.querySelector('body').style.background = color[i];
+});
 
 
